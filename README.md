@@ -13,4 +13,4 @@ sebuah project yang dibuat dengan tujuan untuk belajar dan mengasah skill dalam 
 
 Membuat sebuah aplikasi website sederhana mengubah warna latar ini menjadi dinamis sesuai keinginan pengguna dengan menggunakan html, tailwindcss dan javascript.
 
-[Gogoblesan Part 1 | Youtube - Link](https://www.youtube.com/watch?v=YDcmSjxYyP0)
+[Gogoblesan Part 1 - Youtube](https://www.youtube.com/watch?v=YDcmSjxYyP0)
