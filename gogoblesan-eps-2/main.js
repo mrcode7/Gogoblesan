@@ -1,7 +1,7 @@
-const target1 = document.getElementById("targetObject1");
-const target2 = document.getElementById("targetObject2");
-const select = document.getElementById("selection");
-const input = document.getElementById("inputValue");
+const targetObject1 = document.getElementById("targetObject1");
+const targetObject2 = document.getElementById("targetObject2");
+const selection = document.getElementById("selection");
+const inputValue = document.getElementById("inputValue");
 
 // Ubah latar belakang target1 dan target2 sesuai dengan pilihan selection
 // Warna Latar
@@ -12,31 +12,29 @@ const input = document.getElementById("inputValue");
 // Tinggi Konten
 
 function update() {
-  // Your code here
-  if (select.value === "Warna Latar") {
-    target1.style.backgroundColor = input.value;
-  } else if (select.value === "Warna Text") {
-    target1.style.color = input.value;
-  } else if (select.value === "Ukuran Text") {
-    target1.style.fontSize = input.value;
-  } else if (select.value === "Jenis Font") {
-    target1.style.fontFamily = input.value;
-  } else if (select.value === "Lebar Konten") {
-    target1.style.width = input.value;
-  } else if (select.value === "Tinggi Konten") {
-    target1.style.height = input.value;
-  } else {
-    target1.style.backgroundColor = "red";
-    target1.style.color = "white";
-    target2.innerHTML = "pilih dulu setangg :v";
-    setTimeout(() => {
-      window.location.reload();
-    }, 3000);
-  }
-}
+  const selectUser = selection.options.selectedIndex;
 
-// reset
-function reset() {
-  // Your code here
-  window.location.reload();
+  switch (selectUser) {
+    case 1:
+      targetObject1.style.backgroundColor = inputValue.value;
+      break;
+    case 2:
+      targetObject1.style.color = inputValue.value;
+      break;
+    case 3:
+      targetObject1.style.fontSize = inputValue.value + "px";
+      break;
+    case 4:
+      targetObject1.style.fontFamily = inputValue.value;
+      break;
+    case 5:
+      targetObject1.style.width = inputValue.value + "px";
+      break;
+    case 6:
+      targetObject1.style.height = inputValue.value + "px";
+      break;
+
+    default:
+      break;
+  }
 }
